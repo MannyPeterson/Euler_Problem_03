@@ -20,7 +20,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		long num = 600851475143L, largest = 0;
-		for (long i = 1; i < num; i++)
+		for (long i = 1; i < Math.sqrt(num); i++)
 			if (num % i == 0)
 				if (Main.isPrime(i))
 					largest = i;
